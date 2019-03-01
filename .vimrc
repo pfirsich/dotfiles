@@ -29,6 +29,9 @@ set visualbell " don't beep
 set noerrorbells " don't beep
 set mouse=a " enable mouse scrolling
 
+set guioptions-=r  "remove right-hand scroll bar
+set guioptions-=L  "remove left-hand scroll bar
+
 syntax on
 set background=dark
 
