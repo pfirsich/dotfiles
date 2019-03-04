@@ -96,9 +96,6 @@ inoremap kj <esc>
 vnoremap jk <esc>
 vnoremap kj <esc>
 
-inoremap <S-Space> <esc>
-nnoremap <S-Space> i
-
 map <f9> :make<CR>
 
 nnoremap <C-L> :nohl<CR><C-L>
