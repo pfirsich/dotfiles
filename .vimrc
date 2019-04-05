@@ -10,6 +10,7 @@ Plug 'ctrlpvim/ctrlp.vim'
 Plug 'luochen1990/rainbow'
 Plug 'tpope/vim-sensible'
 Plug 'albfan/whitespace.vim'
+Plug 'tpope/vim-sleuth'
 call plug#end()
 
 " Lightline
