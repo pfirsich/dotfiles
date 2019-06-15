@@ -11,6 +11,7 @@ Plug 'luochen1990/rainbow'
 Plug 'tpope/vim-sensible'
 Plug 'albfan/whitespace.vim'
 Plug 'tpope/vim-sleuth'
+Plug 'junegunn/seoul256.vim'
 call plug#end()
 
 " Lightline
@@ -34,7 +35,7 @@ if has("gui_running")
     endif
     colorscheme molokai
 else
-    colorscheme default
+    colorscheme seoul256
 endif
 
 """ Indentation
