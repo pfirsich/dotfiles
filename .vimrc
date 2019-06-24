@@ -12,7 +12,6 @@ Plug 'tomasr/molokai'
 Plug 'altercation/vim-colors-solarized'
 Plug 'itchyny/lightline.vim'
 Plug 'airblade/vim-gitgutter'
-Plug 'ctrlpvim/ctrlp.vim'
 Plug 'luochen1990/rainbow'
 Plug 'tpope/vim-sensible'
 Plug 'albfan/whitespace.vim'
@@ -79,6 +78,10 @@ set incsearch " incremental search
 set ignorecase " ignore case when searching
 set smartcase " ignore case if pattern is lowercase, case-sensitive otherwise
 
+" https://unix.stackexchange.com/questions/149209/refresh-changed-content-of-file-opened-in-vim
+set autoread
+autocmd FocusGained,BufEnter,CursorHold,CursorHoldI * if mode() != 'c' | checktime | endif
+
 set backspace=indent,eol,start " allow backspacing over everything
 set title " change the terminals title
 set visualbell " don't beep
@@ -103,6 +106,9 @@ inoremap jk <esc>
 inoremap kj <esc>
 vnoremap jk <esc>
 vnoremap kj <esc>
+
+" For auto reloading
+map <f7> :checktime<CR>
 
 map <f9> :make<CR>
 
