@@ -120,8 +120,7 @@ nnoremap <silent> <leader>v <C-w>v<C-w>l
 nnoremap <silent> <leader>s <C-w>s<C-w>j
 
 let hostname = substitute(system('hostname'), '\n', '', '')
-" Machines at work (Fortune 500 company) are trash
+" Special cases for work environment (which sucks)
 if hostname =~ "seroiuts"
-    " Terminal colors are broken and not fixable => Use more tolerable colors
-    colorscheme elflord
+    colorscheme seoul256
 endif
