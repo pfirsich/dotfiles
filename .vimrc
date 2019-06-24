@@ -64,7 +64,7 @@ set colorcolumn=100
 set list
 set listchars=tab:>-,extends:>,precedes:<,nbsp:·,trail:~
 set scrolloff=5 " Display 5 lines above/below the cursor when scrolling with a mouse.
-set number " line numbers
+set relativenumber " line numbers
 set showmatch " show matching parenthesis
 set matchpairs+=<:>
 set history=1000 " longer history
