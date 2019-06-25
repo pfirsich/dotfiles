@@ -1,4 +1,4 @@
-TERM=xterm-256color # MATE Terminal is kinda shit
+TERM=screen-256color # MATE Terminal is kinda shit
 export PATH="$HOME/bin:$PATH"
 
 alias mkdirp='mkdir -p'
