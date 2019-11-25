@@ -112,6 +112,10 @@ map <f7> :checktime<CR>
 
 map <f9> :make<CR>
 
+" vim at work does not have clipboard access - :echo has("clipboard") shows 0
+map <C-y> :call system("xclip -selection c", @")<CR>
+map <C-p> :set paste!<CR>
+
 nnoremap <C-L> :nohl<CR><C-L>
 
 """ Leader Mappings
