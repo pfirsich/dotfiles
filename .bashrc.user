@@ -8,11 +8,6 @@ alias cbcopy="xclip -selection c"
 alias cbpaste="xclip -selection clipboard -o"
 alias tmux="tmux -2" # To make 256 colors work in tmux
 
-function mcd {
-    mkdir "$1"
-    cd "$1"
-}
-
 function cl() {
     cd "$@" && ls;
 }
