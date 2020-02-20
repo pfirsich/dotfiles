@@ -7,6 +7,13 @@ function j --description "j for jump"
         case 'dot'
             cd ~/repos/dotfiles
         case '*'
-            cd
+            while read -la line
+                set -l name (string match -r "^[^=]+" $line)
+                set -l dir (string match -r "[^=]+\$" $line)
+                if [ $name = $argv ]
+                    cd $dir
+                    break
+                end
+            end < ~/.jpaths
     end
 end
