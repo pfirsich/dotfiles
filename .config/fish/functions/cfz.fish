@@ -1,5 +1,5 @@
 function cfz
-    set path (fz)
+    set path (fd -td $argv | fzy)
     if [ $path ]
         cd "$path"
     else
