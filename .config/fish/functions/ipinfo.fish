@@ -1,3 +1,3 @@
 function ipinfo
-    curl http://ipinfo.io/ -s | jq
+    curl -s "http://ipinfo.io/$argv" | jq
 end
