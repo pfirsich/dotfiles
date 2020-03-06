@@ -6,6 +6,8 @@ function j --description "j for jump"
             cd ~/.config/fish/functions
         case 'dot'
             cd ~/repos/dotfiles
+        case 'dl'
+            cd ~/Downloads
         case '*'
             while read -la line
                 set -l name (string match -r "^[^=]+" $line)
