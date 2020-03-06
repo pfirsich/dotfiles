@@ -1,3 +1,3 @@
 function lsrand
-	ls | sort -R | tail -n 1
+	ls $argv | sort -R | tail -n 1
 end
