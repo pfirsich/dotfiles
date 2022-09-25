@@ -6,3 +6,6 @@ set -gx VCPKG_ROOT /home/joel/repos/vcpkg
 
 abbr "-" "prevd"
 abbr "+" "nextd"
+
+abbr sohere "env LD_LIBRARY_PATH=.:\$LD_LIBRARY_PATH"
+abbr langen "env LANG=en_EN.UTF-8"
