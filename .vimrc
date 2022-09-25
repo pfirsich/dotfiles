@@ -17,6 +17,7 @@ Plug 'tpope/vim-sensible'
 Plug 'albfan/whitespace.vim'
 Plug 'tpope/vim-sleuth'
 Plug 'junegunn/seoul256.vim'
+Plug 'markvincze/panda-vim'
 call plug#end()
 
 " Lightline
