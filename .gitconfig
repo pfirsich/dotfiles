@@ -1,0 +1,37 @@
+# https://blog.gitbutler.com/how-git-core-devs-configure-git/
+[user]
+	name = Joel Schumacher
+[branch]
+	sort = -committerdate # the only sorting that makes sense
+[diff]
+	algorithm = histogram # slower, but much better
+	colorMoved = plain # show moved code in different color
+	mnemonicPrefix = true # prefix for file from (i)ndex, (w)orktree, (c)ommit
+[merge]
+	conflictstyle = zdiff3 # EXPERIMENT: include parent commit in conflict markers
+[pull]
+	ff = only # should have been the default
+[push]
+	autoSetupRemote = true # assume --set-upstream when no remote tracking branch is set
+	followTags = true # push tags automatically
+[help]
+	autoCorrect = prompt # autocorrect command typos, but prompt before correcting
+[commit]
+	verbose = true # include diff in commit message comment (below snip)
+[rerere]
+	enabled = true # record resolved conflicts
+	autoUpdate = true # automatically apply previously applied conflict resolutions
+[rebase]
+	updateRefs = true # update branches with commits that are being rebased
+	autoSquash = true # --autosquash by default
+[status]
+	showStash = true # show stash info in status output
+[log]
+	date = iso # superior date format
+	abbrevCommit = true # short commit hashes, use `git rev-parse <short>` to get the long hash
+[tag]
+	sort = version:refname # sort version numbers properly
+[core]
+	excludesFile = /home/joel/.git-excludesfile
+[include]
+	path = ~/.gitconfig.local
