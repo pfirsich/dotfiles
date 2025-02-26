@@ -7,8 +7,6 @@
 	algorithm = histogram # slower, but much better
 	colorMoved = plain # show moved code in different color
 	mnemonicPrefix = true # prefix for file from (i)ndex, (w)orktree, (c)ommit
-[merge]
-	conflictstyle = zdiff3 # EXPERIMENT: include parent commit in conflict markers
 [pull]
 	ff = only # should have been the default
 [push]
